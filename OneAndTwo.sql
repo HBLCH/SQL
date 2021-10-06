@@ -26,6 +26,17 @@ CREATE TABLE `input` (
   `Mgrld` int  ,
   `DeptID` int NOT NULL ,
   primary key(`EmpID`));
+   
+ INSERT INTO `interns`.`employee` (`EmpID`, `Fname`, `Lname`, `DOB`, `Sex`, `Email`, `Salary`, `Mgrld`, `DeptID`) VALUES ('1', 'Abirami', 'Bob', '10-Jan-90', 'Female', 'abirami@hcl.com', '1000', '2', '10');
+INSERT INTO `interns`.`employee` (`EmpID`, `Fname`, `Lname`, `DOB`, `Sex`, `Email`, `Salary`, `Mgrld`, `DeptID`) VALUES ('2', 'Bhuvi', 'Rob', '10-Feb-91', 'Female', 'Bhuvi@cyz', '500', '3', '20');
+INSERT INTO `interns`.`employee` (`EmpID`, `Fname`, `Lname`, `DOB`, `Sex`, `Email`, `Salary`, `Mgrld`, `DeptID`) VALUES ('3', 'Chandrima', 'Derek', '10-Mar-92', 'Female', '@abc.com', '2000', '4', '30');
+INSERT INTO `interns`.`employee` (`EmpID`, `Fname`, `Lname`, `DOB`, `Sex`, `Email`, `Salary`, `Mgrld`, `DeptID`) VALUES ('4', 'Debasis', 'Pringle', '10-Apr-93', 'Male', 'Debasis@hcl.com', '3000', '5', '40');
+INSERT INTO `interns`.`employee` (`EmpID`, `Fname`, `Lname`, `DOB`, `Sex`, `Email`, `Salary`, `Mgrld`, `DeptID`) VALUES ('5', 'Enigma', 'Gefree', '10-May-95', 'Female', 'enigma@gmail.com', '4500', '6', '10');
+INSERT INTO `interns`.`employee` (`EmpID`, `Fname`, `Lname`, `DOB`, `Sex`, `Email`, `Salary`, `Mgrld`, `DeptID`) VALUES ('6', 'Funnel', 'Samas', '10-Jun-99', 'Male', 'funnel@hcl.com', '5500', '7', '20');
+INSERT INTO `interns`.`employee` (`EmpID`, `Fname`, `Lname`, `DOB`, `Sex`, `Email`, `Salary`, `Mgrld`, `DeptID`) VALUES ('7', 'Gabriel', 'Lal', '10-Jul-97', 'Male', 'gabriel@xyz.com', '6500', '8', '30');
+INSERT INTO `interns`.`employee` (`EmpID`, `Fname`, `Lname`, `DOB`, `Sex`, `Email`, `Salary`, `Mgrld`, `DeptID`) VALUES ('8', 'Hari', 'Fedrik', '10-Aug-98', 'Male', 'hari@hcl.com', '7900', '9', '40');
+INSERT INTO `interns`.`employee` (`EmpID`, `Fname`, `Lname`, `DOB`, `Sex`, `Email`, `Salary`, `Mgrld`, `DeptID`) VALUES ('9', 'Inis', 'Gunjan', '10-Sep-99', 'Female', 'inia@hcl.com', '8900', '10', '10');
+INSERT INTO `interns`.`employee` (`EmpID`, `Fname`, `Lname`, `DOB`, `Sex`, `Email`, `Salary`, `DeptID`) VALUES ('10', 'Jaisna', 'Singh', '10-Oct-00', 'Female', 'jasina@hcl.com', '1000', '20');
   
 select * from employee;
 select * ,concat(Mgrld,"Manager",empID)from employee;
@@ -56,16 +67,7 @@ Select *FROM employee where Salary=(Select max(salary) from employee where DeptI
 
 
   
-  INSERT INTO `interns`.`employee` (`EmpID`, `Fname`, `Lname`, `DOB`, `Sex`, `Email`, `Salary`, `Mgrld`, `DeptID`) VALUES ('1', 'Abirami', 'Bob', '10-Jan-90', 'Female', 'abirami@hcl.com', '1000', '2', '10');
-INSERT INTO `interns`.`employee` (`EmpID`, `Fname`, `Lname`, `DOB`, `Sex`, `Email`, `Salary`, `Mgrld`, `DeptID`) VALUES ('2', 'Bhuvi', 'Rob', '10-Feb-91', 'Female', 'Bhuvi@cyz', '500', '3', '20');
-INSERT INTO `interns`.`employee` (`EmpID`, `Fname`, `Lname`, `DOB`, `Sex`, `Email`, `Salary`, `Mgrld`, `DeptID`) VALUES ('3', 'Chandrima', 'Derek', '10-Mar-92', 'Female', '@abc.com', '2000', '4', '30');
-INSERT INTO `interns`.`employee` (`EmpID`, `Fname`, `Lname`, `DOB`, `Sex`, `Email`, `Salary`, `Mgrld`, `DeptID`) VALUES ('4', 'Debasis', 'Pringle', '10-Apr-93', 'Male', 'Debasis@hcl.com', '3000', '5', '40');
-INSERT INTO `interns`.`employee` (`EmpID`, `Fname`, `Lname`, `DOB`, `Sex`, `Email`, `Salary`, `Mgrld`, `DeptID`) VALUES ('5', 'Enigma', 'Gefree', '10-May-95', 'Female', 'enigma@gmail.com', '4500', '6', '10');
-INSERT INTO `interns`.`employee` (`EmpID`, `Fname`, `Lname`, `DOB`, `Sex`, `Email`, `Salary`, `Mgrld`, `DeptID`) VALUES ('6', 'Funnel', 'Samas', '10-Jun-99', 'Male', 'funnel@hcl.com', '5500', '7', '20');
-INSERT INTO `interns`.`employee` (`EmpID`, `Fname`, `Lname`, `DOB`, `Sex`, `Email`, `Salary`, `Mgrld`, `DeptID`) VALUES ('7', 'Gabriel', 'Lal', '10-Jul-97', 'Male', 'gabriel@xyz.com', '6500', '8', '30');
-INSERT INTO `interns`.`employee` (`EmpID`, `Fname`, `Lname`, `DOB`, `Sex`, `Email`, `Salary`, `Mgrld`, `DeptID`) VALUES ('8', 'Hari', 'Fedrik', '10-Aug-98', 'Male', 'hari@hcl.com', '7900', '9', '40');
-INSERT INTO `interns`.`employee` (`EmpID`, `Fname`, `Lname`, `DOB`, `Sex`, `Email`, `Salary`, `Mgrld`, `DeptID`) VALUES ('9', 'Inis', 'Gunjan', '10-Sep-99', 'Female', 'inia@hcl.com', '8900', '10', '10');
-INSERT INTO `interns`.`employee` (`EmpID`, `Fname`, `Lname`, `DOB`, `Sex`, `Email`, `Salary`, `DeptID`) VALUES ('10', 'Jaisna', 'Singh', '10-Oct-00', 'Female', 'jasina@hcl.com', '1000', '20');
+ 
 
   
   
